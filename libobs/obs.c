@@ -346,7 +346,7 @@ static inline void set_video_matrix(struct obs_core_video *video,
 
 	memcpy(video->color_matrix, &mat, sizeof(float) * 16);
 }
-
+//程序启动时 会调用 obs_init_video函数，创建一个obs_video_thread 线程
 static int obs_init_video(struct obs_video_info *ovi)
 {
 	struct obs_core_video *video = &obs->video;
@@ -385,7 +385,7 @@ static int obs_init_video(struct obs_video_info *ovi)
 	gs_leave_context();
 	//创建视频输出线程
 	errorcode = pthread_create(&video->video_thread, NULL,
-			obs_graphics_thread, obs);
+			obs_graphics_thread, obs); //obs_video_thread线程中 进行 数据采集 ，渲染 、保存数据到 缓冲区
 	if (errorcode != 0)
 		return OBS_VIDEO_FAIL;
 

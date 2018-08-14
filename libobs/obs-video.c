@@ -24,6 +24,7 @@
 #include "media-io/format-conversion.h"
 #include "media-io/video-frame.h"
 
+//tick_sources遍历当前加入的所有source，调用obs_source_video_tick
 static uint64_t tick_sources(uint64_t cur_time, uint64_t last_time)
 {
 	struct obs_core_data *data = &obs->data;
@@ -55,7 +56,7 @@ static uint64_t tick_sources(uint64_t cur_time, uint64_t last_time)
 	/* call the tick function of each source */
 
 	pthread_mutex_lock(&data->sources_mutex);
-
+	//遍历当前加入的所有source
 	source = data->first_source;
 	while (source) {
 		obs_source_video_tick(source, seconds);
@@ -600,6 +601,7 @@ static inline void output_frame(void)
 static const char *tick_sources_name = "tick_sources";
 static const char *render_displays_name = "render_displays";
 static const char *output_frame_name = "output_frame";
+//obs_video_thread线程中 进行 数据采集 ，渲染 、保存数据到 缓冲区
 void *obs_graphics_thread(void *param)
 {
 	uint64_t last_time = 0;
@@ -626,7 +628,7 @@ void *obs_graphics_thread(void *param)
 		profile_start(video_thread_name);
 
 		profile_start(tick_sources_name);
-		last_time = tick_sources(obs->video.video_time, last_time);
+		last_time = tick_sources(obs->video.video_time, last_time);  //tick_sources遍历当前加入的所有source，调用obs_source_video_tick
 		profile_end(tick_sources_name);
 
 		profile_start(output_frame_name);
