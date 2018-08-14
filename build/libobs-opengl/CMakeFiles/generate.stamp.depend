@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/CMake/share/cmake-3.12/Modules/FindOpenGL.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/FindPackageMessage.cmake
+D:/Project/OBS/obs-studio-21.1.2/libobs-opengl/CMakeLists.txt

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\common_directx9.cpp">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\common_directx11.cpp">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\common_utils.cpp">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\common_utils_windows.cpp">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\device_directx9.cpp">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\QSV_Encoder.cpp">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\QSV_Encoder_Internal.cpp">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\obs-qsv11.c">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\obs-qsv11-plugin-main.c">
+      <Filter>obs-qsv11\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\main.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_critical_section.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_dispatcher.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_dispatcher_log.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_dxva2_device.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_function_table.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_library_iterator.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_load_dll.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_load_plugin.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_plugin_hive.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\src\mfx_win_reg_key.cpp">
+      <Filter>libmfx\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\bits\linux_defs.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\bits\windows_defs.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\common_directx9.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\common_directx11.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\device_directx9.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\common_utils.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\QSV_Encoder.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\QSV_Encoder_Internal.h">
+      <Filter>obs-qsv11\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxastructures.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxaudio.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxaudio++.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxcommon.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxdefs.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxjpeg.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxmvc.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxplugin.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxplugin++.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxsession.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxstructures.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxvideo.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxvideo++.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\msdk\include\mfxvstructures.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_critical_section.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_dispatcher.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_dispatcher_defs.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_dispatcher_log.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_dxva2_device.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_exposed_functions_list.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_library_iterator.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_load_dll.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_load_plugin.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_plugin_hive.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_vector.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfx_win_reg_key.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\libmfx\include\mfxaudio_exposed_functions_list.h">
+      <Filter>libmfx\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\plugins\obs-qsv11\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="libmfx">
+      <UniqueIdentifier>{E2D5DC0E-B740-3217-9B64-91C4B1F11200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libmfx\Header Files">
+      <UniqueIdentifier>{B142BB80-951B-359F-AD0C-DDF1B1198105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libmfx\Source Files">
+      <UniqueIdentifier>{353733FF-77BA-3248-9BDF-B9133273C43B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="obs-qsv11">
+      <UniqueIdentifier>{46314AC7-90DB-3CE6-B0D3-4372A1F683AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="obs-qsv11\Header Files">
+      <UniqueIdentifier>{40005D1B-C27B-36D8-A24C-1637F8B4B664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="obs-qsv11\Source Files">
+      <UniqueIdentifier>{8357C388-4202-36DE-ABDB-8448E7BC06D6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

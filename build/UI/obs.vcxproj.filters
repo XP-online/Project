@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\platform-windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\update-window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update-helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\deps\libff\libff\ff-util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\obs-app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\api-interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-interaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-properties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-auto-config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-outputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-source-select.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-auto-config-test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-scene-collections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-transitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-dropfiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-profiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-license-agreement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-status-bar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-adv-audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-preview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-namedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-log-reply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-projector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-remux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\focus-list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\menu-button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\double-slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\volume-control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\adv-audio-control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\item-widget-helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-checkbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\locked-checkbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\vertical-scroll-area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-item-widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\slider-absoluteset-style.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-list-widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\crash-report.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\hotkey-edit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\remote-text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\audio-encoders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-wrappers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\qrc_obs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\mocs_compilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\update-window.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update-helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\deps\libff\libff\ff-util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\obs-app.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\platform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-stats.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-filters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-settings.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-interaction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-properties.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-auto-config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-outputs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-source-select.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-license-agreement.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-status-bar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-adv-audio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-preview.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-namedialog.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-log-reply.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-projector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-remux.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.moc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\display-helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\double-slider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\focus-list.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\menu-button.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\mute-checkbox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\volume-control.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\adv-audio-control.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\item-widget-helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-checkbox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\locked-checkbox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\vertical-scroll-area.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-item-widget.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\slider-absoluteset-style.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-list-widget.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-display.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\crash-report.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\hotkey-edit.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-label.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\remote-text.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\audio-encoders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_NameDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStartPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigVideoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStreamPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigTestPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLicenseAgreement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLogReply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicFilters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSourceSelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicInteraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSRemux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\NameDialog.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStartPage.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigVideoPage.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStreamPage.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigTestPage.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLicenseAgreement.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLogReply.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasic.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicTransform.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicFilters.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSettings.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSourceSelect.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicInteraction.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSUpdate.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSRemux.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\obs.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6AA58B51-E5EC-3C52-86E9-2ED61FC314A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5069993-753C-3065-ADDF-585F1D278671}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

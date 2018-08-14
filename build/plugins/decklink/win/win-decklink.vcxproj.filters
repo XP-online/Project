@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\plugin-main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device-instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device-discovery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device-mode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\audio-repack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\win\platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\decklink\win\DeckLinkAPI_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\platform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device-instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device-discovery.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\decklink-device-mode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\audio-repack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\audio-repack.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\win\decklink-sdk\DeckLinkAPIVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\decklink\win\DeckLinkAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\f733f38094ac8387e0c9c6ed574ea2b3\DeckLinkAPI.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\plugins\decklink\win\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F567B7BF-FBDC-319E-8BC0-4BB3E0F6C8DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6AA58B51-E5EC-3C52-86E9-2ED61FC314A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5069993-753C-3065-ADDF-585F1D278671}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

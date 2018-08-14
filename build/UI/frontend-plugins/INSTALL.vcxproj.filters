@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\bff6193108b6fcaea100fd4bebcddaac\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F567B7BF-FBDC-319E-8BC0-4BB3E0F6C8DF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

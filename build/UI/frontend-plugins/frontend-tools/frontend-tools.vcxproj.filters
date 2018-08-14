@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\auto-scene-switcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\frontend-tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\output-timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\vertical-scroll-area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\double-slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\auto-scene-switcher-win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\frontend-plugins\frontend-tools\frontend-tools_autogen\mocs_compilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\config\frontend-tools-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\auto-scene-switcher.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\output-timer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\tool-helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.moc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\vertical-scroll-area.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\double-slider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\scripts.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\frontend-plugins\frontend-tools\ui_auto-scene-switcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\frontend-plugins\frontend-tools\ui_output-timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\frontend-plugins\frontend-tools\ui_scripts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\forms\auto-scene-switcher.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\forms\output-timer.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\forms\scripts.ui" />
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\frontend-plugins\frontend-tools\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6AA58B51-E5EC-3C52-86E9-2ED61FC314A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5069993-753C-3065-ADDF-585F1D278671}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

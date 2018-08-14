@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/CMake/share/cmake-3.12/Modules/CheckIncludeFiles.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/CheckLibraryExists.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/CheckSymbolExists.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/FindImageMagick.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/FindPackageMessage.cmake
+D:/Program Files/CMake/share/cmake-3.12/Modules/FindPkgConfig.cmake
+D:/Project/OBS/obs-studio-21.1.2/cmake/Modules/FindFFmpeg.cmake
+D:/Project/OBS/obs-studio-21.1.2/cmake/Modules/FindThreads.cmake
+D:/Project/OBS/obs-studio-21.1.2/cmake/Modules/FindZLIB.cmake
+D:/Project/OBS/obs-studio-21.1.2/libobs/CMakeLists.txt
+D:/Project/OBS/obs-studio-21.1.2/libobs/LibObsConfig.cmake.in
+D:/Project/OBS/obs-studio-21.1.2/libobs/LibObsConfigVersion.cmake.in
+D:/Project/OBS/obs-studio-21.1.2/libobs/obsconfig.h.in

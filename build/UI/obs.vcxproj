@@ -1,0 +1,1583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5ACDA005-348A-3B10-B240-E8D95E7A78E3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>obs</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_Debug;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG=1;_DEBUG=1;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_Debug;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_Debug;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target obs</Message>
+      <Command>setlocal
+cd D:\Project\OBS\obs-studio-21.1.2\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.cmake Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>			</Message>
+      <Command>setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/Debug/obs64.exe D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Debug -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/Debug -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/pdbs -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Debug -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/Debug -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/bin/64bit -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Project/OBS/obs-studio-21.1.2/UI/data D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgetsd.lib;obs-frontend-api\Debug\obs-frontend-api.lib;..\..\dependencies2017\win64\bin\avcodec.lib;..\..\dependencies2017\win64\bin\avutil.lib;..\..\dependencies2017\win64\bin\avformat.lib;..\..\dependencies2017\win64\bin\libcurl.lib;crypt32.lib;..\deps\blake2\Debug\blake2.lib;..\deps\jansson\lib\Debug\jansson_d.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Guid.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Cored.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\qtmaind.lib;..\libobs\Debug\obs.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Project/OBS/obs-studio-21.1.2/build/UI/Debug/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Project/OBS/obs-studio-21.1.2/build/UI/Debug/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_Release;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_Release;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_Release;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target obs</Message>
+      <Command>setlocal
+cd D:\Project\OBS\obs-studio-21.1.2\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.cmake Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>			</Message>
+      <Command>setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/Release/obs64.exe D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/Release -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/pdbs -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/Release -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/bin/64bit -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Project/OBS/obs-studio-21.1.2/UI/data D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgets.lib;obs-frontend-api\Release\obs-frontend-api.lib;..\..\dependencies2017\win64\bin\avcodec.lib;..\..\dependencies2017\win64\bin\avutil.lib;..\..\dependencies2017\win64\bin\avformat.lib;..\..\dependencies2017\win64\bin\libcurl.lib;crypt32.lib;..\deps\blake2\Release\blake2.lib;..\deps\jansson\lib\Release\jansson.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Gui.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Core.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\qtmain.lib;..\libobs\Release\obs.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Project/OBS/obs-studio-21.1.2/build/UI/Release/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Project/OBS/obs-studio-21.1.2/build/UI/Release/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_MinSizeRel;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_MinSizeRel;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_MinSizeRel;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target obs</Message>
+      <Command>setlocal
+cd D:\Project\OBS\obs-studio-21.1.2\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.cmake MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>			</Message>
+      <Command>setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/MinSizeRel/obs64.exe D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/MinSizeRel -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/pdbs -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/MinSizeRel -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/bin/64bit -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Project/OBS/obs-studio-21.1.2/UI/data D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgets.lib;obs-frontend-api\MinSizeRel\obs-frontend-api.lib;..\..\dependencies2017\win64\bin\avcodec.lib;..\..\dependencies2017\win64\bin\avutil.lib;..\..\dependencies2017\win64\bin\avformat.lib;..\..\dependencies2017\win64\bin\libcurl.lib;crypt32.lib;..\deps\blake2\MinSizeRel\blake2.lib;..\deps\jansson\lib\MinSizeRel\jansson.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Gui.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Core.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\qtmain.lib;..\libobs\MinSizeRel\obs.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Project/OBS/obs-studio-21.1.2/build/UI/MinSizeRel/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Project/OBS/obs-studio-21.1.2/build/UI/MinSizeRel/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_RelWithDebInfo;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_RelWithDebInfo;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\build\UI;D:\Project\OBS\obs-studio-21.1.2\UI;D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\include_RelWithDebInfo;D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\blake2\src;D:\Project\OBS\obs-studio-21.1.2\build\config;D:\Project\OBS\obs-studio-21.1.2\deps\jansson\src;D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\include;D:\Project\OBS\obs-studio-21.1.2\UI\obs-frontend-api;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\deps\libff;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target obs</Message>
+      <Command>setlocal
+cd D:\Project\OBS\obs-studio-21.1.2\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.cmake RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>			</Message>
+      <Command>setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/RelWithDebInfo/obs64.exe D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/RelWithDebInfo -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/pdbs -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DFNAME=obs64.exe -DINPUT=D:/Project/OBS/obs-studio-21.1.2/build/UI/RelWithDebInfo -DOUTPUT=D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/bin/64bit -P D:/Project/OBS/obs-studio-21.1.2/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Project/OBS/obs-studio-21.1.2/UI/data D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgets.lib;obs-frontend-api\RelWithDebInfo\obs-frontend-api.lib;..\..\dependencies2017\win64\bin\avcodec.lib;..\..\dependencies2017\win64\bin\avutil.lib;..\..\dependencies2017\win64\bin\avformat.lib;..\..\dependencies2017\win64\bin\libcurl.lib;crypt32.lib;..\deps\blake2\RelWithDebInfo\blake2.lib;..\deps\jansson\lib\RelWithDebInfo\jansson.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Gui.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Core.lib;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\qtmain.lib;..\libobs\RelWithDebInfo\obs.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Project/OBS/obs-studio-21.1.2/build/UI/RelWithDebInfo/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Project/OBS/obs-studio-21.1.2/build/UI/RelWithDebInfo/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\NameDialog.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_NameDialog.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_NameDialog.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_NameDialog.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_NameDialog.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/NameDialog.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStartPage.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_AutoConfigStartPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStartPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStartPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStartPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_AutoConfigStartPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStartPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStartPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStartPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_AutoConfigStartPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStartPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStartPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStartPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_AutoConfigStartPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStartPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStartPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStartPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStartPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigVideoPage.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_AutoConfigVideoPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigVideoPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigVideoPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigVideoPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_AutoConfigVideoPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigVideoPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigVideoPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigVideoPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_AutoConfigVideoPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigVideoPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigVideoPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigVideoPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_AutoConfigVideoPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigVideoPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigVideoPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigVideoPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigVideoPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStreamPage.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_AutoConfigStreamPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStreamPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStreamPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStreamPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_AutoConfigStreamPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStreamPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStreamPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStreamPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_AutoConfigStreamPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStreamPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStreamPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStreamPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_AutoConfigStreamPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigStreamPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigStreamPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigStreamPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStreamPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigTestPage.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_AutoConfigTestPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigTestPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigTestPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigTestPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_AutoConfigTestPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigTestPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigTestPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigTestPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_AutoConfigTestPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigTestPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigTestPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigTestPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_AutoConfigTestPage.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_AutoConfigTestPage.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/AutoConfigTestPage.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\AutoConfigTestPage.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigTestPage.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLicenseAgreement.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLicenseAgreement.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLicenseAgreement.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLicenseAgreement.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLicenseAgreement.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLicenseAgreement.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLogReply.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLogReply.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLogReply.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLogReply.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSLogReply.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSLogReply.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasic.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasic.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasic.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasic.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasic.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasic.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicTransform.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicTransform.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicTransform.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicTransform.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicTransform.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicTransform.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicFilters.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicFilters.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicFilters.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicFilters.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicFilters.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicFilters.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSettings.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSettings.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSettings.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSettings.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSettings.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSettings.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSourceSelect.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSourceSelect.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSourceSelect.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSourceSelect.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicSourceSelect.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicSourceSelect.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicInteraction.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicInteraction.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicInteraction.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicInteraction.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSBasicInteraction.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSBasicInteraction.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSUpdate.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSUpdate.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSUpdate.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSUpdate.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSUpdate.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSUpdate.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSUpdate.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSUpdate.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSUpdate.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSUpdate.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSUpdate.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSUpdate.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSUpdate.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSUpdate.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSUpdate.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSUpdate.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSUpdate.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSUpdate.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSRemux.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSRemux.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSRemux.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSRemux.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\uic.exe -o D:/Project/OBS/obs-studio-21.1.2/build/UI/ui_OBSRemux.h D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/OBSRemux.ui;D:\Project\OBS\obs-studio-21.1.2\UI\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe --name obs --output D:/Project/OBS/obs-studio-21.1.2/build/UI/qrc_obs.cpp D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\mute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unmute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\refresh.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\configuration21_16.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\invisible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\visible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\list_remove.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\add.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\down.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\editscene.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\live.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\properties.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\up.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\obs.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\tray_active.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\locked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unlocked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\advanced.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\video-display-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\decibel_audio_player.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\applications-system-2.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\system-settings-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network-bluetooth.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe --name obs --output D:/Project/OBS/obs-studio-21.1.2/build/UI/qrc_obs.cpp D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\mute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unmute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\refresh.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\configuration21_16.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\invisible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\visible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\list_remove.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\add.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\down.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\editscene.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\live.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\properties.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\up.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\obs.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\tray_active.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\locked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unlocked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\advanced.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\video-display-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\decibel_audio_player.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\applications-system-2.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\system-settings-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network-bluetooth.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe --name obs --output D:/Project/OBS/obs-studio-21.1.2/build/UI/qrc_obs.cpp D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\mute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unmute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\refresh.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\configuration21_16.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\invisible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\visible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\list_remove.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\add.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\down.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\editscene.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\live.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\properties.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\up.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\obs.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\tray_active.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\locked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unlocked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\advanced.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\video-display-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\decibel_audio_player.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\applications-system-2.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\system-settings-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network-bluetooth.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe --name obs --output D:/Project/OBS/obs-studio-21.1.2/build/UI/qrc_obs.cpp D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/forms/obs.qrc;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\mute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unmute.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\refresh.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\configuration21_16.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\invisible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\visible_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\list_remove.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\add.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\down.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\editscene.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\live.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\properties.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\up.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\obs.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\tray_active.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\locked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\unlocked_mask.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\advanced.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\video-display-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\decibel_audio_player.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\applications-system-2.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\system-settings-3.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\network-bluetooth.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindFFmpeg.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindFFmpeg.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindFFmpeg.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/UI/CMakeLists.txt;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Dev\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\UI\forms\obs.qrc;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindFFmpeg.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\UI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\platform-windows.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\update-window.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update-helpers.cpp" />
+    <ResourceCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\obs.rc" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\deps\libff\libff\ff-util.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\obs-app.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\api-interface.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-stats.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-filters.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-settings.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-interaction.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-properties.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-auto-config.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-outputs.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-source-select.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-auto-config-test.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-scene-collections.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-transitions.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-dropfiles.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-profiles.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-license-agreement.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-status-bar.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-adv-audio.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-transform.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-preview.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-namedialog.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-log-reply.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-projector.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-remux.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\focus-list.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\menu-button.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\double-slider.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\volume-control.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\adv-audio-control.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\item-widget-helpers.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-checkbox.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\locked-checkbox.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\vertical-scroll-area.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-item-widget.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\slider-absoluteset-style.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-list-widget.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-display.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\crash-report.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\hotkey-edit.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-label.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\remote-text.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\audio-encoders.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-wrappers.cpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\update-window.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\win-update\win-update-helpers.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\deps\libff\libff\ff-util.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\obs-app.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\platform.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-main.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-stats.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-filters.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-settings.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-interaction.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-properties.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-auto-config.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-main-outputs.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-source-select.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-license-agreement.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-status-bar.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-adv-audio.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-transform.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-basic-preview.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-namedialog.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-log-reply.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-projector.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\window-remux.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\properties-view.moc.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\display-helpers.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\double-slider.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\focus-list.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\menu-button.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\mute-checkbox.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\volume-control.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\adv-audio-control.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\item-widget-helpers.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-checkbox.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\locked-checkbox.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\vertical-scroll-area.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\visibility-item-widget.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\slider-absoluteset-style.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-list-widget.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-display.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\crash-report.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\hotkey-edit.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\source-label.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\remote-text.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\audio-encoders.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\UI\qt-wrappers.hpp" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_NameDialog.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStartPage.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigVideoPage.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigStreamPage.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_AutoConfigTestPage.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLicenseAgreement.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSLogReply.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasic.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicTransform.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicFilters.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSettings.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicSourceSelect.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSBasicInteraction.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSUpdate.h" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\ui_OBSRemux.h" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\qrc_obs.cpp" />
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\obs_autogen\mocs_compilation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\ZERO_CHECK.vcxproj">
+      <Project>{0307E793-D615-3C3F-89D5-C855050A4898}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\blake2\blake2.vcxproj">
+      <Project>{D6CA841B-3E77-3CAF-B1B3-12BC10D58CBF}</Project>
+      <Name>blake2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\jansson.vcxproj">
+      <Project>{ECDBC23C-55B1-3B62-86D7-B9E86C167274}</Project>
+      <Name>jansson</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\libobs\libobs.vcxproj">
+      <Project>{D95A3750-8DFF-3BE4-9394-D2928356AC1A}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\obs-frontend-api\obs-frontend-api.vcxproj">
+      <Project>{0504C3CA-2862-32DB-858D-B8E0E6867364}</Project>
+      <Name>obs-frontend-api</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

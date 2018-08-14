@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EBD6275F-2336-39B1-A6C9-405103E72CF9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>file-updater</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">file-updater.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">file-updater</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">file-updater.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">file-updater</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">file-updater.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">file-updater</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">file-updater.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">file-updater</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OBS\obs-studio-21.1.2\dependencies2017\win64\include;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\..\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\.;D:\Project\OBS\obs-studio-21.1.2\deps\w32-pthreads;D:\Project\OBS\obs-studio-21.1.2\libobs;D:\Project\OBS\obs-studio-21.1.2\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/deps/file-updater/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/deps/file-updater/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/deps/file-updater/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/deps/file-updater/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/deps/file-updater/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\FindPkgConfig.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindLibcurl.cmake;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\file-updater\file-updater.c" />
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\deps\file-updater\file-updater\file-updater.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\ZERO_CHECK.vcxproj">
+      <Project>{0307E793-D615-3C3F-89D5-C855050A4898}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\libobs\libobs.vcxproj">
+      <Project>{D95A3750-8DFF-3BE4-9394-D2928356AC1A}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\w32-pthreads\w32-pthreads.vcxproj">
+      <Project>{50A68576-54A0-3595-BCE5-4202CE64EAC4}</Project>
+      <Name>w32-pthreads</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

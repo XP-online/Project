@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E7322E67-7A2B-3AD8-805E-6DADFB376C42}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCXXCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeRCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeSystem.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.c;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.cxx;D:\Project\OBS\obs-studio-21.1.2\cmake\ALL_BUILD.vcxproj.user.in;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\CopyMSVCBins.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindCXX11.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsCpack.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsHelpers.cmake;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCXXCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeRCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeSystem.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.c;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.cxx;D:\Project\OBS\obs-studio-21.1.2\cmake\ALL_BUILD.vcxproj.user.in;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\CopyMSVCBins.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindCXX11.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsCpack.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsHelpers.cmake;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCXXCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeRCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeSystem.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.c;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.cxx;D:\Project\OBS\obs-studio-21.1.2\cmake\ALL_BUILD.vcxproj.user.in;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\CopyMSVCBins.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindCXX11.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsCpack.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsHelpers.cmake;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/Project/OBS/obs-studio-21.1.2 -BD:/Project/OBS/obs-studio-21.1.2/build --check-stamp-file D:/Project/OBS/obs-studio-21.1.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OBS/obs-studio-21.1.2/CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeCXXCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeRCCompiler.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\3.12.0\CMakeSystem.cmake;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.c;D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\feature_tests.cxx;D:\Project\OBS\obs-studio-21.1.2\cmake\ALL_BUILD.vcxproj.user.in;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\CopyMSVCBins.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\FindCXX11.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsCpack.cmake;D:\Project\OBS\obs-studio-21.1.2\cmake\Modules\ObsHelpers.cmake;D:\Project\OBS\obs-studio-21.1.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OBS\obs-studio-21.1.2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\ZERO_CHECK.vcxproj">
+      <Project>{0307E793-D615-3C3F-89D5-C855050A4898}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\obs-scripting\obspython\_obspython.vcxproj">
+      <Project>{08F4382F-AE75-37BE-A7E2-F421E8B77691}</Project>
+      <Name>_obspython</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\blake2\blake2.vcxproj">
+      <Project>{D6CA841B-3E77-3CAF-B1B3-12BC10D58CBF}</Project>
+      <Name>blake2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\coreaudio-encoder\coreaudio-encoder.vcxproj">
+      <Project>{41C69B3C-FE9B-33F5-8F52-AE6FFE534AE0}</Project>
+      <Name>coreaudio-encoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-ffmpeg\ffmpeg-mux\ffmpeg-mux.vcxproj">
+      <Project>{3B16355D-1C31-35D1-8A95-31C4E79EDA3B}</Project>
+      <Name>ffmpeg-mux</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\file-updater\file-updater.vcxproj">
+      <Project>{EBD6275F-2336-39B1-A6C9-405103E72CF9}</Project>
+      <Name>file-updater</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\frontend-plugins\frontend-tools\frontend-tools.vcxproj">
+      <Project>{24C7B05D-9C38-379B-AEBA-671943E0BFA7}</Project>
+      <Name>frontend-tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-capture\get-graphics-offsets\get-graphics-offsets.vcxproj">
+      <Project>{F4CDB1F2-2710-3AC4-A8A6-39B09DE355D7}</Project>
+      <Name>get-graphics-offsets</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\glad\glad.vcxproj">
+      <Project>{553478D1-7CA3-3EA5-A241-94A86D5D9270}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-capture\graphics-hook\graphics-hook.vcxproj">
+      <Project>{0F49D52C-6D9A-3484-8BB0-5D52908E304D}</Project>
+      <Name>graphics-hook</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\image-source\image-source.vcxproj">
+      <Project>{FE8A8497-CB48-39B5-BBB9-5CA5ACAD8A00}</Project>
+      <Name>image-source</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-capture\inject-helper\inject-helper.vcxproj">
+      <Project>{4FE85447-3B18-3125-80F6-F2CAB2B18D25}</Project>
+      <Name>inject-helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\ipc-util\ipc-util.vcxproj">
+      <Project>{369936C2-32AF-3E14-9A9F-3AE77DD70817}</Project>
+      <Name>ipc-util</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\jansson.vcxproj">
+      <Project>{ECDBC23C-55B1-3B62-86D7-B9E86C167274}</Project>
+      <Name>jansson</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\libobs\libobs.vcxproj">
+      <Project>{D95A3750-8DFF-3BE4-9394-D2928356AC1A}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\libobs-d3d11\libobs-d3d11.vcxproj">
+      <Project>{0F105C13-3F6F-3E37-BB9E-6AC1CF5CEA79}</Project>
+      <Name>libobs-d3d11</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\libobs-opengl\libobs-opengl.vcxproj">
+      <Project>{5A4D829B-FF7F-391E-818C-F4F0E007D5B0}</Project>
+      <Name>libobs-opengl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\lzma\lzma.vcxproj">
+      <Project>{518AFF43-E12B-347F-A4FD-3705970E14AE}</Project>
+      <Name>lzma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\media-playback\media-playback.vcxproj">
+      <Project>{2920E589-C4F7-3175-9C01-9617579C1971}</Project>
+      <Name>media-playback</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\obs.vcxproj">
+      <Project>{5ACDA005-348A-3B10-B240-E8D95E7A78E3}</Project>
+      <Name>obs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-ffmpeg\obs-ffmpeg.vcxproj">
+      <Project>{3CDDF134-EA38-3533-BC17-D8A284DF3B18}</Project>
+      <Name>obs-ffmpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-filters\obs-filters.vcxproj">
+      <Project>{8660CB06-507E-3852-A0C2-9D5EEBA117E0}</Project>
+      <Name>obs-filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\UI\obs-frontend-api\obs-frontend-api.vcxproj">
+      <Project>{0504C3CA-2862-32DB-858D-B8E0E6867364}</Project>
+      <Name>obs-frontend-api</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-outputs\obs-outputs.vcxproj">
+      <Project>{6D448BD2-DAA8-3635-9939-ECC2C338F22A}</Project>
+      <Name>obs-outputs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-qsv11\obs-qsv11.vcxproj">
+      <Project>{1E0CFDD5-1520-3CCF-8866-9675CA53157F}</Project>
+      <Name>obs-qsv11</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\obs-scripting\obs-scripting.vcxproj">
+      <Project>{05966C5B-B20D-3BE7-9ABD-7492089FD4EF}</Project>
+      <Name>obs-scripting</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-text\obs-text.vcxproj">
+      <Project>{3FCF261C-F543-39A5-A6FD-C92527F8AA7E}</Project>
+      <Name>obs-text</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-transitions\obs-transitions.vcxproj">
+      <Project>{D081009E-6206-32F1-A6E8-F790CF5F1B9E}</Project>
+      <Name>obs-transitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-x264\obs-x264.vcxproj">
+      <Project>{5355D197-7AEF-329B-BFC3-42F6B1134C46}</Project>
+      <Name>obs-x264</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\obs-scripting\obslua\obslua.vcxproj">
+      <Project>{AC3A0D5F-6CF9-386A-9E34-676CB499A724}</Project>
+      <Name>obslua</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\rtmp-services\rtmp-services.vcxproj">
+      <Project>{E99CFF4F-0408-3C61-9655-D0174B204BBB}</Project>
+      <Name>rtmp-services</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\test\test-input\test-input.vcxproj">
+      <Project>{646A7974-DBCD-3777-B75A-7B6491E83760}</Project>
+      <Name>test-input</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\text-freetype2\text-freetype2.vcxproj">
+      <Project>{D228F20B-F7B7-3402-943D-15B90FB42889}</Project>
+      <Name>text-freetype2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\deps\w32-pthreads\w32-pthreads.vcxproj">
+      <Project>{50A68576-54A0-3595-BCE5-4202CE64EAC4}</Project>
+      <Name>w32-pthreads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-capture\win-capture.vcxproj">
+      <Project>{5DB79ACA-5D97-3212-A8BB-D96989BFAA1C}</Project>
+      <Name>win-capture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\decklink\win\win-decklink.vcxproj">
+      <Project>{EAE574EC-001C-3A02-BA26-47B2AA4BC4D2}</Project>
+      <Name>win-decklink</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-dshow\win-dshow.vcxproj">
+      <Project>{7BCDA207-DE2B-33D0-817C-4D2B2DF6D5D7}</Project>
+      <Name>win-dshow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-mf\win-mf.vcxproj">
+      <Project>{73A7A99F-AAAC-3588-952D-CA59D87F54FB}</Project>
+      <Name>win-mf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\test\win\win-test.vcxproj">
+      <Project>{193DB1A9-438B-377E-853F-63F235C97D3E}</Project>
+      <Name>win-test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-wasapi\win-wasapi.vcxproj">
+      <Project>{3EE41EBE-A876-3F76-B489-DDAD0E545CC1}</Project>
+      <Name>win-wasapi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\calldata.c">
+      <Filter>callback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\decl.c">
+      <Filter>callback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\signal.c">
+      <Filter>callback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\proc.c">
+      <Filter>callback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\graphics-ffmpeg.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\quat.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\effect-parser.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\axisang.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\vec4.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\vec2.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\libnsgif\libnsgif.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\texture-render.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\image-file.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\bounds.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\matrix3.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\matrix4.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\vec3.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\graphics.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\shader-parser.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\plane.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\effect.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\math-extra.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\graphics-imports.c">
+      <Filter>graphics\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-io.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-fourcc.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-matrices.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\audio-io.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-frame.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\format-conversion.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\audio-resampler-ffmpeg.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-scaler-ffmpeg.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\media-remux.c">
+      <Filter>media-io\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\array-serializer.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\file-serializer.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\base.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\platform.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\cf-lexer.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\bmem.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\config-file.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\lexer.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\dstr.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\utf8.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\crc32.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\text-lookup.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\cf-parser.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\profiler.c">
+      <Filter>util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-win-crash-handler.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-windows.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\threading-windows.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\pipe-windows.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\platform-windows.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-audio-controls.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-avc.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-encoder.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-service.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-source.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-source-deinterlace.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-source-transition.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-output.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-output-delay.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-properties.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-data.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-hotkey.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-hotkey-name-map.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-module.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-display.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-view.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-scene.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-audio.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-video.c">
+      <Filter>libobs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\audio-monitoring\win32\wasapi-output.c">
+      <Filter>audio-monitoring\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OBS\obs-studio-21.1.2\libobs\audio-monitoring\win32\wasapi-enum-devices.c">
+      <Filter>audio-monitoring\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\build\config\obsconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\calldata.h">
+      <Filter>callback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\decl.h">
+      <Filter>callback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\proc.h">
+      <Filter>callback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\callback\signal.h">
+      <Filter>callback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\plane.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\quat.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\input.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\axisang.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\shader-parser.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\effect.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\math-defs.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\matrix4.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\graphics.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\graphics-internal.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\libnsgif\libnsgif.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\device-exports.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\image-file.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\vec2.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\vec4.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\matrix3.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\vec3.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\math-extra.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\bounds.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\graphics\effect-parser.h">
+      <Filter>graphics\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\media-io-defs.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-io.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\audio-io.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\audio-math.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-frame.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\format-conversion.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\audio-resampler.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\video-scaler.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\media-remux.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\media-io\frame-rate.h">
+      <Filter>media-io\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\array-serializer.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\file-serializer.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\utf8.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\crc32.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\base.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\text-lookup.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\vc\vc_inttypes.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\vc\vc_stdbool.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\vc\vc_stdint.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\bmem.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\c99defs.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\util_uint128.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\cf-parser.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\threading.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\pipe.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\cf-lexer.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\darray.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\circlebuf.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\dstr.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\serializer.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\config-file.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\lexer.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\platform.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\profiler.h">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\profiler.hpp">
+      <Filter>util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\threading-windows.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\windows\win-registry.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\windows\win-version.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\windows\ComPtr.hpp">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\windows\CoTaskMemPtr.hpp">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\windows\HRError.hpp">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\util\windows\WinHandle.hpp">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-audio-controls.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-defs.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-avc.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-encoder.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-service.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-internal.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-ui.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-properties.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-data.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-interaction.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-hotkey.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-hotkeys.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-module.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-scene.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-source.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-output.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs-ffmpeg-compat.h">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\obs.hpp">
+      <Filter>libobs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OBS\obs-studio-21.1.2\libobs\audio-monitoring\win32\wasapi-output.h">
+      <Filter>audio-monitoring\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OBS\obs-studio-21.1.2\libobs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6AA58B51-E5EC-3C52-86E9-2ED61FC314A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio-monitoring">
+      <UniqueIdentifier>{513D679F-CDB2-3045-A8CD-C6C4CC91C60B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio-monitoring\Header Files">
+      <UniqueIdentifier>{938A42A5-B533-3305-B4E4-80F83CA86273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio-monitoring\Source Files">
+      <UniqueIdentifier>{6F726CE5-34FA-3D25-AB08-4852E456110C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback">
+      <UniqueIdentifier>{5FEAE6AE-F38E-39E9-A80F-F7A88970638B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback\Header Files">
+      <UniqueIdentifier>{CF18525D-0A4D-3F4D-93FA-0DB609B96038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback\Source Files">
+      <UniqueIdentifier>{0BE16957-4D13-3640-AC05-C3152D386B6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{2AB8B204-54F8-3209-80D7-FE0F4302094E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\Header Files">
+      <UniqueIdentifier>{75CC722A-E29B-357A-99E7-2EF10EA36673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\Source Files">
+      <UniqueIdentifier>{71783572-3413-3C1E-8CA9-F939FCA13958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libobs">
+      <UniqueIdentifier>{85E232F6-F0C2-3CBC-AF0E-6B9BF8548F99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libobs\Header Files">
+      <UniqueIdentifier>{B11A6F01-F44F-3CB6-81C7-8F86EF799636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libobs\Source Files">
+      <UniqueIdentifier>{ABBFA6DE-7B93-337F-97E2-D7F6149B053E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media-io">
+      <UniqueIdentifier>{5E760D7E-7DF6-3B9A-B622-A297AAB2EF11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media-io\Header Files">
+      <UniqueIdentifier>{13E9358D-9411-3263-91E2-B4C970C5B6D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media-io\Source Files">
+      <UniqueIdentifier>{A8FDA111-1DBA-3AC0-AD84-9C3A71686288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{477AE006-73EF-3CA8-A481-BE30E5616A2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\Header Files">
+      <UniqueIdentifier>{BB68BC25-1BE5-3C33-8A8E-26DE66E89981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\Source Files">
+      <UniqueIdentifier>{5A7B7DCB-68E8-31EC-BE45-94D81E4EDE42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
