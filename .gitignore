@@ -3,3 +3,17 @@
 ################################################################################
 
 /build/.vs/obs-studio/v15/Solution.VC.db-wal
+/build/.vs/obs-studio/v15/Solution.VC.db-shm
+/build/.vs/obs-studio/v15/Solution.VC.db
+/build/.vs/obs-studio/v15/Browse.VC.opendb
+/build/.vs/obs-studio/v15/Browse.VC.db
+/build/.vs/obs-studio/v15/.suo
+/build/x64/Debug
+/build/UI
+/build/test
+/build/rundir/Debug
+/build/plugins
+/build/libobs-opengl
+/build/libobs-d3d11
+/build/libobs
+/build/deps
