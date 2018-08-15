@@ -247,6 +247,12 @@ struct obs_source_info {
 	 * @param  data     Source data
 	 * @param  seconds  Seconds elapsed since the last frame
 	 */
+	/**
+	 *  video_tick 在每个插件对应的结构体中进行初始化，例如window-capture 窗口捕获
+	 *  在window-capture工程的window_capture_info 结构中，video_tick指向了wc_tick
+	 *  函数，wc_tick进行数据采集，采集的数据放到了source->context.data中
+	 * @xp
+	 */
 	void (*video_tick)(void *data, float seconds);
 
 	/**

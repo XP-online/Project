@@ -19,3 +19,8 @@
 /build/deps
 /build/.vs/obs-studio/v15/ipch/AutoPCH/12038e7b75ac68ee
 /build/.vs/obs-studio/v15/ipch/AutoPCH/e81a38172b26a54a/OBS-VIDEO.ipch
+/build/.vs/obs-studio/v15/ipch/AutoPCH/41242aff4fb9ee9e/OBS-VIEW.ipch
+/build/.vs/obs-studio/v15/ipch/AutoPCH/7913b3537a8aeea9/OBS-DISPLAY.ipch
+/build/.vs/obs-studio/v15/ipch/AutoPCH/5857f9c0047a2312/WINDOW-BASIC-MAIN.ipch
+/build/.vs/obs-studio/v15/ipch/AutoPCH/b3194cf2e2faf3e5/WINDOW-CAPTURE.ipch
+/build/.vs/obs-studio/v15/ipch/AutoPCH/e5d4a0c5969925fe/OBS-SOURCE.ipch

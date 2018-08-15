@@ -146,7 +146,7 @@ static obs_properties_t *wc_properties(void *unused)
 #define RESIZE_CHECK_TIME 0.2f
 #define CURSOR_CHECK_TIME 0.2f
 
-//libobs底层不断调用static void wc_tick(void *data, float seconds)来获取数据
+// @xp : libobs底层不断调用static void wc_tick(void *data, float seconds)来获取数据
 static void wc_tick(void *data, float seconds)
 {
 	struct window_capture *wc = data;
@@ -212,9 +212,9 @@ static void wc_tick(void *data, float seconds)
 	if (reset_capture) {
 		wc->resize_timer = 0.0f;
 		wc->last_rect = rect;
-		//释放创建的对象
+		// @xp : 释放创建的对象
 		dc_capture_free(&wc->capture);
-		//获取窗口位图数据加载到窗口的dc中
+		// @xp : 获取窗口位图数据加载到窗口的dc中
 		dc_capture_init(&wc->capture, 0, 0, rect.right, rect.bottom,
 				wc->cursor, wc->compatibility);
 	}

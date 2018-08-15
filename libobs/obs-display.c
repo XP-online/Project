@@ -175,7 +175,7 @@ static inline void render_display_end()
 	gs_end_scene();
 	gs_present();
 }
-
+// @xp : 对读取的数据进行渲染
 void render_display(struct obs_display *display)
 {
 	uint32_t cx, cy;
@@ -206,7 +206,7 @@ void render_display(struct obs_display *display)
 		struct draw_callback *callback;
 		callback = display->draw_callbacks.array+i;
 
-		callback->draw(callback->param, cx, cy);
+		callback->draw(callback->param, cx, cy);  //callback->draw 对应 RenderMain
 	}
 
 	pthread_mutex_unlock(&display->draw_callbacks_mutex);

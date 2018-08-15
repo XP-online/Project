@@ -1052,8 +1052,8 @@ void obs_source_video_tick(obs_source_t *source, float seconds)
 
 		source->active = now_active;
 	}
-
-	if (source->context.data && source->info.video_tick)
+	
+	if (source->context.data && source->info.video_tick)  // @xp : video_tick 在每个插件对应的结构体中进行初始化，例如window-capture 窗口捕获
 		source->info.video_tick(source->context.data, seconds);
 
 	source->async_rendered = false;
