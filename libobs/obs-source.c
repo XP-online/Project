@@ -1740,7 +1740,7 @@ void obs_source_default_render(obs_source_t *source)
 	}
 	gs_technique_end(tech);
 }
-
+// @xp : 调用info.video_render, 终于调用video_render....( ＞﹏＜)。
 static inline void obs_source_main_render(obs_source_t *source)
 {
 	uint32_t flags      = source->info.output_flags;
@@ -1752,12 +1752,12 @@ static inline void obs_source_main_render(obs_source_t *source)
 	if (default_effect)
 		obs_source_default_render(source);
 	else if (source->context.data)
-		source->info.video_render(source->context.data,
+		source->info.video_render(source->context.data, // @xp : video_render在插件结构体中进行了初始化，最后调用到wc_render，然后数据传送到 opengl  或者d3d中进行处理，显示
 				custom_draw ? NULL : gs_get_effect());
 }
 
 static bool ready_async_frame(obs_source_t *source, uint64_t sys_time);
-
+// @xp : 为了最终调用video_render，调用obs_source_main_render
 static inline void render_video(obs_source_t *source)
 {
 	if (source->info.type != OBS_SOURCE_TYPE_FILTER &&
@@ -1785,7 +1785,7 @@ static inline void render_video(obs_source_t *source)
 		obs_source_render_filters(source);
 
 	else if (source->info.video_render)
-		obs_source_main_render(source);
+		obs_source_main_render(source);   // @xp : 调用info.video_render, 终于调用video_render....( ＞﹏＜)。
 
 	else if (source->filter_target)
 		obs_source_video_render(source->filter_target);
@@ -1796,14 +1796,14 @@ static inline void render_video(obs_source_t *source)
 	else
 		obs_source_render_async_video(source);
 }
-
+// @xp : 为了最终调用video_render，调用render_video
 void obs_source_video_render(obs_source_t *source)
 {
 	if (!obs_source_valid(source, "obs_source_video_render"))
 		return;
 
 	obs_source_addref(source);
-	render_video(source);
+	render_video(source);  // @xp : 为了最终调用video_render，调用obs_source_main_render
 	obs_source_release(source);
 }
 

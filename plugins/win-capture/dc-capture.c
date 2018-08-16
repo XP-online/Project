@@ -21,7 +21,7 @@ static inline void init_textures(struct dc_capture *capture)
 
 	capture->valid = true;
 }
-
+// @xp : è·å–çª—å£ä½å›¾æ•°æ®åŠ è½½åˆ°çª—å£çš„dcä¸­
 void dc_capture_init(struct dc_capture *capture, int x, int y,
 		uint32_t width, uint32_t height, bool cursor,
 		bool compatibility)
@@ -56,18 +56,18 @@ void dc_capture_init(struct dc_capture *capture, int x, int y,
 		bih->biWidth    = width;
 		bih->biHeight   = height;
 		bih->biPlanes   = 1;
-		//´´½¨Ò»¸öÉè±¸¼æÈİµÄDC 
+		// @xp : åˆ›å»ºä¸€ä¸ªè®¾å¤‡å…¼å®¹çš„DC 
 		capture->hdc = CreateCompatibleDC(NULL);
-		//´´½¨¿ÉÒÔÖ±½ÓĞ´ÈëµÄ¡¢ÓëÉè±¸ÎŞ¹ØµÄÎ»Í¼(DIB)
+		// @xp : åˆ›å»ºå¯ä»¥ç›´æ¥å†™å…¥çš„ã€ä¸è®¾å¤‡æ— å…³çš„ä½å›¾(DIB)
 		capture->bmp = CreateDIBSection(capture->hdc, &bi,
 				DIB_RGB_COLORS, (void**)&capture->bits,
 				NULL, 0);
 
-		//½«Î»Í¼Ñ¡Èëµ½DC
+		// @xp : å°†ä½å›¾é€‰å…¥åˆ°DC
 		capture->old_bmp = SelectObject(capture->hdc, capture->bmp);
 	}
 }
-//ÊÍ·Å´´½¨µÄ¶ÔÏó
+// @xp : é‡Šæ”¾åˆ›å»ºçš„å¯¹è±¡
 void dc_capture_free(struct dc_capture *capture)
 {
 	if (capture->hdc) {
@@ -82,7 +82,7 @@ void dc_capture_free(struct dc_capture *capture)
 
 	memset(capture, 0, sizeof(struct dc_capture));
 }
-//»æÖÆÊó±ê
+// @xp : ç»˜åˆ¶é¼ æ ‡
 static void draw_cursor(struct dc_capture *capture, HDC hdc, HWND window)
 {
 	HICON      icon;
@@ -153,17 +153,17 @@ void dc_capture_capture(struct dc_capture *capture, HWND window)
 		                  "texture DC");
 		return;
 	}
-	//È¡µÃ´°¿ÚµÄDC
+	// @xp : å–å¾—çª—å£çš„DC
 	hdc_target = GetDC(window);
 
-	//½«×ÀÃæ´°¿ÚDCµÄÍ¼Ïó¸´ÖÆµ½¼æÈİDCÖĞ 
+	// @xp : å°†æ¡Œé¢çª—å£DCçš„å›¾è±¡å¤åˆ¶åˆ°å…¼å®¹DCä¸­ 
 	BitBlt(hdc, 0, 0, capture->width, capture->height,
 			hdc_target, capture->x, capture->y, SRCCOPY);
 
 	ReleaseDC(NULL, hdc_target);
 
 	if (capture->cursor_captured && !capture->cursor_hidden)
-		draw_cursor(capture, hdc, window);		//²¶×½Êó±ê£¬ĞèÒªÔÚ´ËÎ»Í¼ÉÏ»­Ò»¸öicon
+		draw_cursor(capture, hdc, window);		// @xp : æ•æ‰é¼ æ ‡ï¼Œéœ€è¦åœ¨æ­¤ä½å›¾ä¸Šç”»ä¸€ä¸ªicon
 
 	dc_capture_release_dc(capture);
 

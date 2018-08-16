@@ -112,6 +112,7 @@ static inline void unmap_last_surface(struct obs_core_video *video)
 }
 
 static const char *render_main_texture_name = "render_main_texture";
+// @xp : 调用obs_view_render
 static inline void render_main_texture(struct obs_core_video *video,
 		int cur_texture)
 {
@@ -137,7 +138,7 @@ static inline void render_main_texture(struct obs_core_video *video,
 
 	pthread_mutex_unlock(&obs->data.draw_callbacks_mutex);
 
-	obs_view_render(&obs->data.main_view);
+	obs_view_render(&obs->data.main_view);  // @xp : 调用obs_source_video_render
 
 	video->textures_rendered[cur_texture] = true;
 
@@ -335,6 +336,7 @@ end:
 	profile_end(stage_output_texture_name);
 }
 
+// @xp : 调用render_main_texture	
 static inline void render_video(struct obs_core_video *video, int cur_texture,
 		int prev_texture)
 {
@@ -342,8 +344,8 @@ static inline void render_video(struct obs_core_video *video, int cur_texture,
 
 	gs_enable_depth_test(false);
 	gs_set_cull_mode(GS_NEITHER);
-
-	render_main_texture(video, cur_texture);
+	
+	render_main_texture(video, cur_texture);  // @xp : 调用obs_view_render
 	render_output_texture(video, cur_texture, prev_texture);
 	if (video->gpu_conversion)
 		render_convert_texture(video, cur_texture, prev_texture);
@@ -496,7 +498,7 @@ static inline void copy_rgbx_frame(
 		}
 	}
 }
-
+// @xp : 调用video_output_lock_frame，数据最终保存在video cache中
 static inline void output_video_data(struct obs_core_video *video,
 		struct video_data *input_frame, int count)
 {
@@ -506,7 +508,7 @@ static inline void output_video_data(struct obs_core_video *video,
 
 	info = video_output_get_info(video->video);
 
-	locked = video_output_lock_frame(video->video, &output_frame, count,
+	locked = video_output_lock_frame(video->video, &output_frame, count,	 // @xp : 向video->cache中保存数据
 			input_frame->timestamp);
 	if (locked) {
 		if (video->gpu_conversion) {
@@ -522,7 +524,7 @@ static inline void output_video_data(struct obs_core_video *video,
 		video_output_unlock_frame(video->video);
 	}
 }
-
+// @xp : 向video中push back数据
 static inline void video_sleep(struct obs_core_video *video,
 		uint64_t *p_time, uint64_t interval_ns)
 {
@@ -544,7 +546,7 @@ static inline void video_sleep(struct obs_core_video *video,
 
 	vframe_info.timestamp = cur_time;
 	vframe_info.count = count;
-	circlebuf_push_back(&video->vframe_info_buffer, &vframe_info,
+	circlebuf_push_back(&video->vframe_info_buffer, &vframe_info,  // @xp : 向video中push back数据
 			sizeof(vframe_info));
 }
 
@@ -553,6 +555,7 @@ static const char *output_frame_render_video_name = "render_video";
 static const char *output_frame_download_frame_name = "download_frame";
 static const char *output_frame_gs_flush_name = "gs_flush";
 static const char *output_frame_output_video_data_name = "output_video_data";
+// @xp : obs_video_thread线程通过out_frame获取opengl 或者d3d处理后的数据，然后把数据放到缓冲区
 static inline void output_frame(void)
 {
 	struct obs_core_video *video = &obs->video;
@@ -567,11 +570,11 @@ static inline void output_frame(void)
 	gs_enter_context(video->graphics);
 
 	profile_start(output_frame_render_video_name);
-	render_video(video, cur_texture, prev_texture);
+	render_video(video, cur_texture, prev_texture);	// @xp : 调用render_main_texture	
 	profile_end(output_frame_render_video_name);
 
 	profile_start(output_frame_download_frame_name);
-	frame_ready = download_frame(video, prev_texture, &frame);
+	frame_ready = download_frame(video, prev_texture, &frame);// @xp : 获得数据buffer指针
 	profile_end(output_frame_download_frame_name);
 
 	profile_start(output_frame_gs_flush_name);
@@ -588,7 +591,7 @@ static inline void output_frame(void)
 
 		frame.timestamp = vframe_info.timestamp;
 		profile_start(output_frame_output_video_data_name);
-		output_video_data(video, &frame, vframe_info.count);
+		output_video_data(video, &frame, vframe_info.count);	// @xp : 调用video_output_lock_frame，数据最终保存在video cache中
 		profile_end(output_frame_output_video_data_name);
 	}
 
@@ -601,7 +604,7 @@ static inline void output_frame(void)
 static const char *tick_sources_name = "tick_sources";
 static const char *render_displays_name = "render_displays";
 static const char *output_frame_name = "output_frame";
-// @xp : obs_video_thread线程中 进行 数据采集 ，渲染 、保存数据到 缓冲区
+// @xp : 在obs_video_thread线程中 进行 数据采集 ，渲染 、保存数据到 缓冲区
 void *obs_graphics_thread(void *param)
 {
 	uint64_t last_time = 0;
@@ -632,7 +635,7 @@ void *obs_graphics_thread(void *param)
 		profile_end(tick_sources_name);
 
 		profile_start(output_frame_name);
-		output_frame();
+		output_frame();  // @xp : obs_video_thread线程通过out_frame获取opengl 或者d3d处理后的数据，然后把数据放到缓冲区
 		profile_end(output_frame_name);
 
 		profile_start(render_displays_name);
@@ -645,7 +648,7 @@ void *obs_graphics_thread(void *param)
 
 		profile_reenable_thread();
 
-		video_sleep(&obs->video, &obs->video.video_time, interval);
+		video_sleep(&obs->video, &obs->video.video_time, interval);	// @xp : 向video中push back数据
 
 		frame_time_total_ns += frame_time_ns;
 		fps_total_ns += (obs->video.video_time - last_time);

@@ -188,7 +188,7 @@ void OBSBasicProperties::on_buttonBox_clicked(QAbstractButton *button)
 		view->RefreshProperties();
 	}
 }
-
+// @xp : 绘制预览窗口
 void OBSBasicProperties::DrawPreview(void *data, uint32_t cx, uint32_t cy)
 {
 	OBSBasicProperties *window = static_cast<OBSBasicProperties*>(data);

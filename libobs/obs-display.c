@@ -117,7 +117,7 @@ void obs_display_resize(obs_display_t *display, uint32_t cx, uint32_t cy)
 
 	pthread_mutex_unlock(&display->draw_info_mutex);
 }
-
+// @xp : 添加绘制预览窗口的回调函数
 void obs_display_add_draw_callback(obs_display_t *display,
 		void (*draw)(void *param, uint32_t cx, uint32_t cy),
 		void *param)
@@ -175,7 +175,7 @@ static inline void render_display_end()
 	gs_end_scene();
 	gs_present();
 }
-// @xp : �Զ�ȡ�����ݽ�����Ⱦ
+// @xp : 对读取的数据进行渲染
 void render_display(struct obs_display *display)
 {
 	uint32_t cx, cy;
@@ -206,7 +206,7 @@ void render_display(struct obs_display *display)
 		struct draw_callback *callback;
 		callback = display->draw_callbacks.array+i;
 
-		callback->draw(callback->param, cx, cy);  //callback->draw ��Ӧ RenderMain
+		callback->draw(callback->param, cx, cy);  // @xp : callback->draw 对应 RenderMain函数，通过在OBSInit()中的obs_display_add_draw_callback添加的回调函数
 	}
 
 	pthread_mutex_unlock(&display->draw_callbacks_mutex);

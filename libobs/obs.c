@@ -363,7 +363,7 @@ static int obs_init_video(struct obs_video_info *ovi)
 
 	set_video_matrix(video, ovi);
 	
-	errorcode = video_output_open(&video->video, &vi);
+	errorcode = video_output_open(&video->video, &vi); // @xp : 创建video_thread进程
 
 	if (errorcode != VIDEO_OUTPUT_SUCCESS) {
 		if (errorcode == VIDEO_OUTPUT_INVALIDPARAM) {

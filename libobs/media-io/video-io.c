@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
     Copyright (C) 2013 by Hugh Bailey <obs.jim@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
@@ -111,7 +111,7 @@ static inline bool scale_video_output(struct video_input *input,
 
 	return success;
 }
-
+// @xp : video_output_cur_frame取数据 ，编码 ，数据放到缓冲区
 static inline bool video_output_cur_frame(struct video_output *video)
 {
 	struct cached_frame_info *frame_info;
@@ -135,7 +135,7 @@ static inline bool video_output_cur_frame(struct video_output *video)
 		struct video_data frame = frame_info->frame;
 
 		if (scale_video_output(input, &frame))
-			input->callback(input->param, &frame);
+			input->callback(input->param, &frame);  // @xp : input->callback对应 receive_video
 	}
 
 	pthread_mutex_unlock(&video->input_mutex);
@@ -165,7 +165,7 @@ static inline bool video_output_cur_frame(struct video_output *video)
 
 	return complete;
 }
-
+// @xp : 视频输出线程
 static void *video_thread(void *param)
 {
 	struct video_output *video = param;
@@ -181,8 +181,8 @@ static void *video_thread(void *param)
 			break;
 
 		profile_start(video_thread_name);
-		//线程循环
-		while (!video->stop && !video_output_cur_frame(video)) {
+		// @xp : 线程循环
+		while (!video->stop && !video_output_cur_frame(video)) {// @xp : video_output_cur_frame取数据 ，编码 ，数据放到缓冲区
 			video->total_frames++;
 		}
 
@@ -218,7 +218,7 @@ static inline void init_cache(struct video_output *video)
 
 	video->available_frames = video->info.cache_size;
 }
-
+// @xp : 创建video_thread进程
 int video_output_open(video_t **video, struct video_output_info *info)
 {
 	struct video_output *out;
@@ -246,7 +246,7 @@ int video_output_open(video_t **video, struct video_output_info *info)
 		goto fail;
 	if (os_sem_init(&out->update_semaphore, 0) != 0)
 		goto fail;
-	if (pthread_create(&out->thread, NULL, video_thread, out) != 0)
+	if (pthread_create(&out->thread, NULL, video_thread, out) != 0)  // @xp : 创建video_thread进程
 		goto fail;
 
 	init_cache(out);
@@ -420,7 +420,7 @@ const struct video_output_info *video_output_get_info(const video_t *video)
 {
 	return video ? &video->info : NULL;
 }
-
+// @xp : 向video->cache中保存数据
 bool video_output_lock_frame(video_t *video, struct video_frame *frame,
 		int count, uint64_t timestamp)
 {
@@ -442,7 +442,7 @@ bool video_output_lock_frame(video_t *video, struct video_frame *frame,
 				video->last_added = 0;
 		}
 
-		cfi = &video->cache[video->last_added];
+		cfi = &video->cache[video->last_added];  // @xp : 向video->cache中保存数据
 		cfi->frame.timestamp = timestamp;
 		cfi->count = count;
 		cfi->skipped = 0;

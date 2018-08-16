@@ -24,3 +24,9 @@
 /build/.vs/obs-studio/v15/ipch/AutoPCH/5857f9c0047a2312/WINDOW-BASIC-MAIN.ipch
 /build/.vs/obs-studio/v15/ipch/AutoPCH/b3194cf2e2faf3e5/WINDOW-CAPTURE.ipch
 /build/.vs/obs-studio/v15/ipch/AutoPCH/e5d4a0c5969925fe/OBS-SOURCE.ipch
+.vs
+rundir
+x64
+/build/PACKAGE.vcxproj.user
+/build/ZERO_CHECK.vcxproj.user
+/build/INSTALL.vcxproj.user
