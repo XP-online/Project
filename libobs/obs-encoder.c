@@ -188,8 +188,8 @@ static void add_connection(struct obs_encoder *encoder)
 	} else {
 		struct video_scale_info info = {0};
 		get_video_info(encoder, &info);
-
-		video_output_connect(encoder->media, &info, receive_video,
+		
+		video_output_connect(encoder->media, &info, receive_video,  // @xp : video_output_connect 根据 info 的信息，创建video_input并绑定receive_video作为回调函数
 			encoder);
 	}
 

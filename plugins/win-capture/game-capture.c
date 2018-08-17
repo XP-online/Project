@@ -1,3 +1,7 @@
+/**
+ * note: 游戏源对应的文件
+ * @xp : game-capture.c
+ */
 #include <inttypes.h>
 #include <obs-module.h>
 #include <obs-hotkey.h>
@@ -95,7 +99,7 @@ struct game_capture_config {
 	bool                          capture_overlays;
 	bool                          anticheat_hook;
 };
-
+// @xp : game_capture 游戏源的结构体
 struct game_capture {
 	obs_source_t                  *source;
 

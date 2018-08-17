@@ -346,7 +346,7 @@ static inline void set_video_matrix(struct obs_core_video *video,
 
 	memcpy(video->color_matrix, &mat, sizeof(float) * 16);
 }
-// @xp : 程序启动时 会调用 obs_init_video函数，创建一个obs_video_thread 线程
+// @xp : obs_init_video 程序启动时 会调用obs_init_video函数来创建一个video_thread（视频编码）线程和一个obs_video_thread（视频图像）线程
 static int obs_init_video(struct obs_video_info *ovi)
 {
 	struct obs_core_video *video = &obs->video;
@@ -363,7 +363,7 @@ static int obs_init_video(struct obs_video_info *ovi)
 
 	set_video_matrix(video, ovi);
 	
-	errorcode = video_output_open(&video->video, &vi); // @xp : 创建video_thread进程
+	errorcode = video_output_open(&video->video, &vi); // @xp : video_output_open 创建video_thread视频编码线程
 
 	if (errorcode != VIDEO_OUTPUT_SUCCESS) {
 		if (errorcode == VIDEO_OUTPUT_INVALIDPARAM) {
@@ -383,9 +383,9 @@ static int obs_init_video(struct obs_video_info *ovi)
 		return OBS_VIDEO_FAIL;
 
 	gs_leave_context();
-	// @xp : 创建视频输出线程
+	// @xp : pthread_create 创建视频图像线程
 	errorcode = pthread_create(&video->video_thread, NULL,
-			obs_graphics_thread, obs); // @xp : obs_video_thread线程中 进行 数据采集 ，渲染 、保存数据到 缓冲区
+			obs_graphics_thread, obs); // @xp : obs_graphics_thread线程中 进行 数据采集 ，渲染 、保存数据到 缓冲区
 	if (errorcode != 0)
 		return OBS_VIDEO_FAIL;
 
@@ -925,7 +925,7 @@ static inline bool size_valid(uint32_t width, uint32_t height)
 	return (width >= OBS_SIZE_MIN && height >= OBS_SIZE_MIN &&
 	        width <= OBS_SIZE_MAX && height <= OBS_SIZE_MAX);
 }
-
+// @xp : obs_reset_video 最终调用obs_init_video初始化OBS视频编码线程
 int obs_reset_video(struct obs_video_info *ovi)
 {
 	if (!obs) return OBS_VIDEO_FAIL;
@@ -995,7 +995,7 @@ int obs_reset_video(struct obs_video_info *ovi)
 		       yuv ? "/" : "",
 	               yuv ? yuv_range : "");
 
-	return obs_init_video(ovi);
+	return obs_init_video(ovi);  // @xp : obs_init_video 程序启动时 会调用obs_init_video函数来创建一个video_thread（视频编码）线程和一个obs_video_thread（视频渲染）线程
 }
 
 bool obs_reset_audio(const struct obs_audio_info *oai)

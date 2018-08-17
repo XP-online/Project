@@ -1,3 +1,7 @@
+/**
+ * note: 视频设备源对应的文件
+ * @xp : win-dshow.cpp
+ */
 #include <objbase.h>
 
 #include <obs-module.h>
@@ -159,7 +163,7 @@ enum class Action {
 };
 
 static DWORD CALLBACK DShowThread(LPVOID ptr);
-
+// @xp : DShowInput 视频设备源的结构体
 struct DShowInput {
 	obs_source_t *source;
 	Device       device;

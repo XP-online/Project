@@ -14,6 +14,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ****************************************************************************/
+/**
+ * note: 文本源对应的文件
+ * @xp : text-freetype2.c
+ */
 #include <obs-module.h>
 #include <util/platform.h>
 #include <ft2build.h>
@@ -29,7 +33,7 @@ OBS_DECLARE_MODULE()
 OBS_MODULE_USE_DEFAULT_LOCALE("text-freetype2", "en-US")
 
 uint32_t texbuf_w = 2048, texbuf_h = 2048;
-
+// @xp : 文本源的结构体
 static struct obs_source_info freetype2_source_info = {
 	.id = "text_ft2_source",
 	.type = OBS_SOURCE_TYPE_INPUT,

@@ -1411,7 +1411,7 @@ extern obs_frontend_callbacks *InitializeAPIInterface(OBSBasic *main);
 #define UNKNOWN_ERROR \
 	"Failed to initialize video.  Your GPU may not be supported, " \
 	"or your graphics drivers may need to be updated."
-
+// @xp : OBSInit 初始化OBS
 void OBSBasic::OBSInit()
 {
 	ProfileScope("OBSBasic::OBSInit");
@@ -1438,7 +1438,7 @@ void OBSBasic::OBSInit()
 		throw "Failed to load basic.ini";
 	if (!ResetAudio())
 		throw "Failed to initialize audio";
-
+	// @xp : ResetVideo 初始化OBS视频流
 	ret = ResetVideo();
 
 	switch (ret) {
@@ -2975,7 +2975,7 @@ void OBSBasic::DrawBackdrop(float cx, float cy)
 
 	gs_load_vertexbuffer(nullptr);
 }
-
+// @xp : RenderMain 绘制预览窗口
 void OBSBasic::RenderMain(void *data, uint32_t cx, uint32_t cy)
 {
 	OBSBasic *window = static_cast<OBSBasic*>(data);
@@ -3067,10 +3067,10 @@ bool OBSBasic::Active() const
 #else
 #define IS_WIN32 0
 #endif
-
+// @xp : AttemptToResetVideo 最终调用obs_init_video初始化OBS视频编码线程
 static inline int AttemptToResetVideo(struct obs_video_info *ovi)
 {
-	return obs_reset_video(ovi);
+	return obs_reset_video(ovi);  // @xp : obs_reset_video 最终调用obs_init_video初始化OBS视频编码线程
 }
 
 static inline enum obs_scale_type GetScaleType(ConfigFile &basicConfig)
@@ -3116,7 +3116,7 @@ void OBSBasic::ResetUI()
 	else
 		ui->previewLayout->setDirection(QBoxLayout::LeftToRight);
 }
-
+// @xp : ResetVideo 初始化OBS视频流
 int OBSBasic::ResetVideo()
 {
 	if (outputHandler && outputHandler->Active())
@@ -3170,8 +3170,8 @@ int OBSBasic::ResetVideo()
 		config_set_uint(basicConfig, "Video", "OutputCY",
 				ovi.base_height);
 	}
-
-	ret = AttemptToResetVideo(&ovi);
+	
+	ret = AttemptToResetVideo(&ovi);  // @xp : AttemptToResetVideo 最终调用obs_init_video初始化OBS视频编码线程
 	if (IS_WIN32 && ret != OBS_VIDEO_SUCCESS) {
 		if (ret == OBS_VIDEO_CURRENTLY_ACTIVE) {
 			blog(LOG_WARNING, "Tried to reset when "

@@ -1053,7 +1053,7 @@ void obs_source_video_tick(obs_source_t *source, float seconds)
 		source->active = now_active;
 	}
 	
-	if (source->context.data && source->info.video_tick)  // @xp : video_tick ÔÚÃ¿¸ö²å¼ş¶ÔÓ¦µÄ½á¹¹ÌåÖĞ½øĞĞ³õÊ¼»¯£¬ÀıÈçwindow-capture ´°¿Ú²¶»ñ
+	if (source->context.data && source->info.video_tick)  // @xp : video_tick åœ¨æ¯ä¸ªæ’ä»¶å¯¹åº”çš„ç»“æ„ä½“ä¸­è¿›è¡Œåˆå§‹åŒ–ï¼Œä¾‹å¦‚window-capture çª—å£æ•è·
 		source->info.video_tick(source->context.data, seconds);
 
 	source->async_rendered = false;
@@ -1740,7 +1740,7 @@ void obs_source_default_render(obs_source_t *source)
 	}
 	gs_technique_end(tech);
 }
-// @xp : µ÷ÓÃinfo.video_render, ÖÕÓÚµ÷ÓÃvideo_render....( £¾©n£¼)¡£
+// @xp : obs_source_main_render è°ƒç”¨info.video_render, ç»ˆäºè°ƒç”¨video_render....( ï¼ï¹ï¼œ)ã€‚
 static inline void obs_source_main_render(obs_source_t *source)
 {
 	uint32_t flags      = source->info.output_flags;
@@ -1752,12 +1752,12 @@ static inline void obs_source_main_render(obs_source_t *source)
 	if (default_effect)
 		obs_source_default_render(source);
 	else if (source->context.data)
-		source->info.video_render(source->context.data, // @xp : video_renderÔÚ²å¼ş½á¹¹ÌåÖĞ½øĞĞÁË³õÊ¼»¯£¬×îºóµ÷ÓÃµ½wc_render£¬È»ºóÊı¾İ´«ËÍµ½ opengl  »òÕßd3dÖĞ½øĞĞ´¦Àí£¬ÏÔÊ¾
+		source->info.video_render(source->context.data, // @xp : video_render åœ¨æ’ä»¶ç»“æ„ä½“ä¸­è¿›è¡Œäº†åˆå§‹åŒ–ï¼Œæœ€åè°ƒç”¨åˆ°wc_renderï¼Œç„¶åæ•°æ®ä¼ é€åˆ° opengl  æˆ–è€…d3dä¸­è¿›è¡Œå¤„ç†ï¼Œæ˜¾ç¤º
 				custom_draw ? NULL : gs_get_effect());
 }
 
 static bool ready_async_frame(obs_source_t *source, uint64_t sys_time);
-// @xp : ÎªÁË×îÖÕµ÷ÓÃvideo_render£¬µ÷ÓÃobs_source_main_render
+// @xp : render_video ä¸ºäº†æœ€ç»ˆè°ƒç”¨video_renderï¼Œè°ƒç”¨obs_source_main_render
 static inline void render_video(obs_source_t *source)
 {
 	if (source->info.type != OBS_SOURCE_TYPE_FILTER &&
@@ -1785,7 +1785,7 @@ static inline void render_video(obs_source_t *source)
 		obs_source_render_filters(source);
 
 	else if (source->info.video_render)
-		obs_source_main_render(source);   // @xp : µ÷ÓÃinfo.video_render, ÖÕÓÚµ÷ÓÃvideo_render....( £¾©n£¼)¡£
+		obs_source_main_render(source);   // @xp : obs_source_main_render è°ƒç”¨info.video_render, ç»ˆäºè°ƒç”¨video_render....( ï¼ï¹ï¼œ)ã€‚
 
 	else if (source->filter_target)
 		obs_source_video_render(source->filter_target);
@@ -1796,14 +1796,14 @@ static inline void render_video(obs_source_t *source)
 	else
 		obs_source_render_async_video(source);
 }
-// @xp : ÎªÁË×îÖÕµ÷ÓÃvideo_render£¬µ÷ÓÃrender_video
+// @xp : obs_source_video_render ä¸ºäº†æœ€ç»ˆè°ƒç”¨video_renderï¼Œè°ƒç”¨render_video
 void obs_source_video_render(obs_source_t *source)
 {
 	if (!obs_source_valid(source, "obs_source_video_render"))
 		return;
 
 	obs_source_addref(source);
-	render_video(source);  // @xp : ÎªÁË×îÖÕµ÷ÓÃvideo_render£¬µ÷ÓÃobs_source_main_render
+	render_video(source);  // @xp : render_video ä¸ºäº†æœ€ç»ˆè°ƒç”¨video_renderï¼Œè°ƒç”¨obs_source_main_render
 	obs_source_release(source);
 }
 

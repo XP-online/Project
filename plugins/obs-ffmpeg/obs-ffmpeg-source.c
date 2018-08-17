@@ -13,17 +13,17 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+/**
+ * note: Ã½ÌåÔ´Ëù¶ÔÓ¦µÄÎÄ¼ş
+ * @xp : obs-ffmpeg-source.c
+ */
 
 #include <obs-module.h>
 #include <util/platform.h>
 #include <util/dstr.h>
 
 #include "obs-ffmpeg-compat.h"
-/************************************************************************/
-/* åª’ä½“æºæ‰€å¯¹åº”çš„æ–‡ä»¶                                                                     */
-/************************************************************************/
 #include "obs-ffmpeg-formats.h"
-
 #include <media-playback/media.h>
 
 #define FF_LOG(level, format, ...) \
@@ -33,7 +33,7 @@
 			obs_source_get_name(source), ##__VA_ARGS__)
 #define FF_BLOG(level, format, ...) \
 	FF_LOG_S(s->source, level, format, ##__VA_ARGS__)
-//åª’ä½“æºç»“æ„ä½“
+// @xp: ffmpeg_source Ã½ÌåÔ´½á¹¹Ìå
 struct ffmpeg_source {
 	mp_media_t media;
 	bool media_valid;

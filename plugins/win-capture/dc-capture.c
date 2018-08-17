@@ -21,7 +21,7 @@ static inline void init_textures(struct dc_capture *capture)
 
 	capture->valid = true;
 }
-// @xp : 获取窗口位图数据加载到窗口的dc中
+// @xp : dc_capture_init 获取窗口位图数据加载到窗口的dc中
 void dc_capture_init(struct dc_capture *capture, int x, int y,
 		uint32_t width, uint32_t height, bool cursor,
 		bool compatibility)
@@ -56,18 +56,18 @@ void dc_capture_init(struct dc_capture *capture, int x, int y,
 		bih->biWidth    = width;
 		bih->biHeight   = height;
 		bih->biPlanes   = 1;
-		// @xp : 创建一个设备兼容的DC 
+		// @xp : CreateCompatibleDC 创建一个设备兼容的DC 
 		capture->hdc = CreateCompatibleDC(NULL);
-		// @xp : 创建可以直接写入的、与设备无关的位图(DIB)
+		// @xp : CreateDIBSection 创建可以直接写入的、与设备无关的位图(DIB)
 		capture->bmp = CreateDIBSection(capture->hdc, &bi,
 				DIB_RGB_COLORS, (void**)&capture->bits,
 				NULL, 0);
 
-		// @xp : 将位图选入到DC
+		// @xp : SelectObject 将位图选入到DC
 		capture->old_bmp = SelectObject(capture->hdc, capture->bmp);
 	}
 }
-// @xp : 释放创建的对象
+// @xp : dc_capture_free 释放创建的对象
 void dc_capture_free(struct dc_capture *capture)
 {
 	if (capture->hdc) {
@@ -82,7 +82,7 @@ void dc_capture_free(struct dc_capture *capture)
 
 	memset(capture, 0, sizeof(struct dc_capture));
 }
-// @xp : 绘制鼠标
+// @xp : draw_cursor 绘制鼠标
 static void draw_cursor(struct dc_capture *capture, HDC hdc, HWND window)
 {
 	HICON      icon;
@@ -153,17 +153,17 @@ void dc_capture_capture(struct dc_capture *capture, HWND window)
 		                  "texture DC");
 		return;
 	}
-	// @xp : 取得窗口的DC
+	// @xp : GetDC 取得窗口的DC
 	hdc_target = GetDC(window);
 
-	// @xp : 将桌面窗口DC的图象复制到兼容DC中 
+	// @xp : BitBlt 将桌面窗口DC的图象复制到兼容DC中 
 	BitBlt(hdc, 0, 0, capture->width, capture->height,
 			hdc_target, capture->x, capture->y, SRCCOPY);
 
 	ReleaseDC(NULL, hdc_target);
 
 	if (capture->cursor_captured && !capture->cursor_hidden)
-		draw_cursor(capture, hdc, window);		// @xp : 捕捉鼠标，需要在此位图上画一个icon
+		draw_cursor(capture, hdc, window);		// @xp : draw_cursor 捕捉鼠标，需要在此位图上画一个icon
 
 	dc_capture_release_dc(capture);
 

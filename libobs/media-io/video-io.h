@@ -76,7 +76,7 @@ struct video_output_info {
 	enum video_format format;
 	uint32_t          fps_num;	//分子
 	uint32_t          fps_den;	//分母
-	uint32_t          width;		//分辨率宽
+	uint32_t          width;	//分辨率宽
 	uint32_t          height;	//分辨率高
 	size_t            cache_size;
 
