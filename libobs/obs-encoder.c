@@ -189,7 +189,7 @@ static void add_connection(struct obs_encoder *encoder)
 		struct video_scale_info info = {0};
 		get_video_info(encoder, &info);
 		
-		video_output_connect(encoder->media, &info, receive_video,  // @xp : video_output_connect 鏍规嵁 info 鐨勪俊鎭紝鍒涘缓video_input骞剁粦瀹歳eceive_video浣滀负鍥炶皟鍑芥暟
+		video_output_connect(encoder->media, &info, receive_video,  // @xp : video_output_connect 根据 info 的信息，创建video_input并绑定receive_video作为回调函数
 			encoder);
 	}
 
@@ -749,7 +749,7 @@ static void send_first_video_packet(struct obs_encoder *encoder,
 
 	da_free(data);
 }
-
+// @xp : send_packet 返回编码后的数据
 static inline void send_packet(struct obs_encoder *encoder,
 		struct encoder_callback *cb, struct encoder_packet *packet)
 {
@@ -771,6 +771,7 @@ static void full_stop(struct obs_encoder *encoder)
 }
 
 static const char *do_encode_name = "do_encode";
+// @xp : do_encode 开始编码
 static inline void do_encode(struct obs_encoder *encoder,
 		struct encoder_frame *frame)
 {
@@ -789,7 +790,7 @@ static inline void do_encode(struct obs_encoder *encoder,
 	pkt.encoder = encoder;
 
 	profile_start(encoder->profile_encoder_encode_name);
-	success = encoder->info.encode(encoder->context.data, frame, &pkt,
+	success = encoder->info.encode(encoder->context.data, frame, &pkt,  // @xp : encoder->info.encode 开始x264编码
 			&received);
 	profile_end(encoder->profile_encoder_encode_name);
 	if (!success) {
@@ -816,7 +817,7 @@ static inline void do_encode(struct obs_encoder *encoder,
 		for (size_t i = encoder->callbacks.num; i > 0; i--) {
 			struct encoder_callback *cb;
 			cb = encoder->callbacks.array+(i-1);
-			send_packet(encoder, cb, &pkt);
+			send_packet(encoder, cb, &pkt);  // @xp : send_packet 返回编码后的数据
 		}
 
 		pthread_mutex_unlock(&encoder->callbacks_mutex);
@@ -827,6 +828,7 @@ error:
 }
 
 static const char *receive_video_name = "receive_video";
+// @xp : receive_video，对视频进行编码。
 static void receive_video(void *param, struct video_data *frame)
 {
 	profile_start(receive_video_name);
@@ -854,7 +856,7 @@ static void receive_video(void *param, struct video_data *frame)
 
 	enc_frame.frames = 1;
 	enc_frame.pts    = encoder->cur_pts;
-
+	// @xp : do_encode 开始编码
 	do_encode(encoder, &enc_frame);
 
 	encoder->cur_pts += encoder->timebase_num;
