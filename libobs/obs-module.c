@@ -242,7 +242,7 @@ static const char *obs_load_all_modules_name = "obs_load_all_modules";
 #ifdef _WIN32
 static const char *reset_win32_symbol_paths_name = "reset_win32_symbol_paths";
 #endif
-
+// @xp : 初始化所有的插件动态库
 void obs_load_all_modules(void)
 {
 	profile_start(obs_load_all_modules_name);

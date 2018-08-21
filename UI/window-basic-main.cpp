@@ -1473,7 +1473,7 @@ void OBSBasic::OBSInit()
 
 	AddExtraModulePaths();
 	blog(LOG_INFO, "---------------------------------");
-	obs_load_all_modules();
+	obs_load_all_modules();		// @xp : 初始化所有的插件动态库
 	blog(LOG_INFO, "---------------------------------");
 	obs_log_loaded_modules();
 	blog(LOG_INFO, "---------------------------------");

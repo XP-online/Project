@@ -2375,7 +2375,7 @@ static inline struct obs_source_frame *cache_video(struct obs_source *source,
 
 	return new_frame;
 }
-
+// @xp : obs_source_output_video数据采集，将采集数据插入到视频队列
 void obs_source_output_video(obs_source_t *source,
 		const struct obs_source_frame *frame)
 {
@@ -2394,7 +2394,7 @@ void obs_source_output_video(obs_source_t *source,
 
 	if (output) {
 		pthread_mutex_lock(&source->async_mutex);
-		da_push_back(source->async_frames, &output);
+		da_push_back(source->async_frames, &output); // @xp : source->async_frames 视频数据队列
 		pthread_mutex_unlock(&source->async_mutex);
 		source->async_active = true;
 	}
