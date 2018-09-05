@@ -30,3 +30,5 @@ x64
 /build/PACKAGE.vcxproj.user
 /build/ZERO_CHECK.vcxproj.user
 /build/INSTALL.vcxproj.user
+/build/ALL_BUILD.vcxproj.user
+ALL_BUILD.vcxproj.user
