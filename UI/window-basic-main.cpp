@@ -3206,7 +3206,7 @@ bool OBSBasic::ResetAudio()
 	ProfileScope("OBSBasic::ResetAudio");
 
 	struct obs_audio_info ai;
-	ai.samples_per_sec = config_get_uint(basicConfig, "Audio",
+	ai.samples_per_sec = config_get_uint(basicConfig, "Audio",	// @xp : 设置音频采样率
 			"SampleRate");
 
 	const char *channelSetupStr = config_get_string(basicConfig,
