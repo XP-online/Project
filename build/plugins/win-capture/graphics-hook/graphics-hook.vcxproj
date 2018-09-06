@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0F49D52C-6D9A-3484-8BB0-5D52908E304D}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>graphics-hook</ProjectName>
@@ -112,7 +112,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/win-capture/graphics-hook/Debug/graphics-hook64.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/data/obs-plugins/win-capture/graphics-hook64.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -168,7 +169,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/win-capture/graphics-hook/Release/graphics-hook64.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/data/obs-plugins/win-capture/graphics-hook64.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -224,7 +226,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/win-capture/graphics-hook/MinSizeRel/graphics-hook64.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/data/obs-plugins/win-capture/graphics-hook64.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -279,7 +282,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/win-capture/graphics-hook/RelWithDebInfo/graphics-hook64.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/data/obs-plugins/win-capture/graphics-hook64.dll
 if %errorlevel% neq 0 goto :cmEnd

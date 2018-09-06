@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{08F4382F-AE75-37BE-A7E2-F421E8B77691}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>_obspython</ProjectName>
@@ -112,7 +112,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/deps/obs-scripting/obspython/obspython.py D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/data/obs-scripting/64bit//obspython.py
 if %errorlevel% neq 0 goto :cmEnd
@@ -177,7 +178,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/deps/obs-scripting/obspython/obspython.py D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/data/obs-scripting/64bit//obspython.py
 if %errorlevel% neq 0 goto :cmEnd
@@ -242,7 +244,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/deps/obs-scripting/obspython/obspython.py D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/data/obs-scripting/64bit//obspython.py
 if %errorlevel% neq 0 goto :cmEnd
@@ -306,7 +309,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/deps/obs-scripting/obspython/obspython.py D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/data/obs-scripting/64bit//obspython.py
 if %errorlevel% neq 0 goto :cmEnd

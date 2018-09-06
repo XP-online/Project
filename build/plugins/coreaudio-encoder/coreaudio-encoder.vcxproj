@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{41C69B3C-FE9B-33F5-8F52-AE6FFE534AE0}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>coreaudio-encoder</ProjectName>
@@ -112,7 +112,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/coreaudio-encoder/Debug/coreaudio-encoder.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/obs-plugins/64bit/coreaudio-encoder.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -195,7 +196,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/coreaudio-encoder/Release/coreaudio-encoder.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/obs-plugins/64bit/coreaudio-encoder.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -278,7 +280,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/coreaudio-encoder/MinSizeRel/coreaudio-encoder.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/obs-plugins/64bit/coreaudio-encoder.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -360,7 +363,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/coreaudio-encoder/RelWithDebInfo/coreaudio-encoder.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/obs-plugins/64bit/coreaudio-encoder.dll
 if %errorlevel% neq 0 goto :cmEnd

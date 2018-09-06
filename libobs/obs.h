@@ -182,8 +182,8 @@ struct obs_video_info {
  * Audio initialization structure
  */
 struct obs_audio_info {
-	uint32_t            samples_per_sec; // @xp : 音频采样率
-	enum speaker_layout speakers;	// @xp : 声道
+	uint32_t            samples_per_sec; 
+	enum speaker_layout speakers;	
 };
 
 /**

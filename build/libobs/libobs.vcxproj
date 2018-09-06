@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D95A3750-8DFF-3BE4-9394-D2928356AC1A}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>libobs</ProjectName>
@@ -112,7 +112,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>											</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs/Debug/obs.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/bin/64bit/obs.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -268,7 +269,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>											</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs/Release/obs.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/bin/64bit/obs.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -424,7 +426,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>											</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs/MinSizeRel/obs.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/bin/64bit/obs.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -579,7 +582,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>											</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs/RelWithDebInfo/obs.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/bin/64bit/obs.dll
 if %errorlevel% neq 0 goto :cmEnd

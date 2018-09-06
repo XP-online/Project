@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E99CFF4F-0408-3C61-9655-D0174B204BBB}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>rtmp-services</ProjectName>
@@ -111,7 +111,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/rtmp-services/Debug/rtmp-services.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/obs-plugins/64bit/rtmp-services.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -193,7 +194,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/rtmp-services/Release/rtmp-services.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/obs-plugins/64bit/rtmp-services.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -275,7 +277,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/rtmp-services/MinSizeRel/rtmp-services.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/obs-plugins/64bit/rtmp-services.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -356,7 +359,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/plugins/rtmp-services/RelWithDebInfo/rtmp-services.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/obs-plugins/64bit/rtmp-services.dll
 if %errorlevel% neq 0 goto :cmEnd

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0504C3CA-2862-32DB-858D-B8E0E6867364}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>obs-frontend-api</ProjectName>
@@ -112,7 +112,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/obs-frontend-api/Debug/obs-frontend-api.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/bin/64bit/obs-frontend-api.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -186,7 +187,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/obs-frontend-api/Release/obs-frontend-api.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/bin/64bit/obs-frontend-api.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -260,7 +262,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/obs-frontend-api/MinSizeRel/obs-frontend-api.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/bin/64bit/obs-frontend-api.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -333,7 +336,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/obs-frontend-api/RelWithDebInfo/obs-frontend-api.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/bin/64bit/obs-frontend-api.dll
 if %errorlevel% neq 0 goto :cmEnd

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5A4D829B-FF7F-391E-818C-F4F0E007D5B0}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>libobs-opengl</ProjectName>
@@ -111,7 +111,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs-opengl/Debug/libobs-opengl.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/bin/64bit/libobs-opengl.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -184,7 +185,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs-opengl/Release/libobs-opengl.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/bin/64bit/libobs-opengl.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -257,7 +259,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs-opengl/MinSizeRel/libobs-opengl.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/bin/64bit/libobs-opengl.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -329,7 +332,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>		</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/libobs-opengl/RelWithDebInfo/libobs-opengl.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/bin/64bit/libobs-opengl.dll
 if %errorlevel% neq 0 goto :cmEnd

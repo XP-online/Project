@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{24C7B05D-9C38-379B-AEBA-671943E0BFA7}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>frontend-tools</ProjectName>
@@ -128,7 +128,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/frontend-plugins/frontend-tools/Debug/frontend-tools.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Debug/obs-plugins/64bit/frontend-tools.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -227,7 +228,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/frontend-plugins/frontend-tools/Release/frontend-tools.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/Release/obs-plugins/64bit/frontend-tools.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -326,7 +328,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/frontend-plugins/frontend-tools/MinSizeRel/frontend-tools.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/MinSizeRel/obs-plugins/64bit/frontend-tools.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -424,7 +427,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>			</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "D:\Program Files\CMake\bin\cmake.exe" -E copy D:/Project/OBS/obs-studio-21.1.2/build/UI/frontend-plugins/frontend-tools/RelWithDebInfo/frontend-tools.dll D:/Project/OBS/obs-studio-21.1.2/build/rundir/RelWithDebInfo/obs-plugins/64bit/frontend-tools.dll
 if %errorlevel% neq 0 goto :cmEnd
