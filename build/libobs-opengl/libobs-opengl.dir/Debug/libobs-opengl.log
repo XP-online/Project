@@ -1,0 +1,14 @@
+﻿  gl-windows.c
+  gl-helpers.c
+  gl-indexbuffer.c
+  gl-shader.c
+  gl-shaderparser.c
+  gl-stagesurf.c
+  gl-subsystem.c
+  gl-texture2d.c
+  gl-texturecube.c
+  gl-vertexbuffer.c
+  gl-zstencil.c
+  正在生成代码...
+    正在创建库 D:/Project/OBS/obs-studio-21.1.2/build/libobs-opengl/Debug/libobs-opengl.lib 和对象 D:/Project/OBS/obs-studio-21.1.2/build/libobs-opengl/Debug/libobs-opengl.exp
+  libobs-opengl.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\libobs-opengl\Debug\libobs-opengl.dll

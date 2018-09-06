@@ -1,0 +1,8 @@
+﻿  obs-ffmpeg.c
+  obs-ffmpeg-audio-encoders.c
+  obs-ffmpeg-nvenc.c
+  obs-ffmpeg-output.c
+  obs-ffmpeg-mux.c
+  obs-ffmpeg-source.c
+  正在生成代码...
+  obs-ffmpeg.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-ffmpeg\Debug\obs-ffmpeg.dll

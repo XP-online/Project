@@ -1,0 +1,10 @@
+﻿  Automatic MOC for target frontend-tools
+  auto-scene-switcher.cpp
+  output-timer.cpp
+  scripts.cpp
+  properties-view.cpp
+d:\project\obs\obs-studio-21.1.2\ui\properties-view.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  mocs_compilation.cpp
+  正在生成代码...
+  frontend-tools.c
+  frontend-tools.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\UI\frontend-plugins\frontend-tools\Debug\frontend-tools.dll

@@ -1,0 +1,6 @@
+﻿  dshow-plugin.cpp
+  win-dshow-encoder.cpp
+  win-dshow.cpp
+  正在生成代码...
+  ffmpeg-decode.c
+  win-dshow.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-dshow\Debug\win-dshow.dll

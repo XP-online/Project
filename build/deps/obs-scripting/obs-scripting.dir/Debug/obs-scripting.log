@@ -1,0 +1,9 @@
+﻿  obs-scripting-lua-frontend.c
+  obs-scripting-lua-source.c
+  obs-scripting-lua.c
+d:\project\obs\obs-studio-21.1.2\deps\obs-scripting\obs-scripting-lua.c(584): warning C4100: “source”: 未引用的形参
+  obs-scripting-python-frontend.c
+  obs-scripting-python.c
+  obs-scripting.c
+  正在生成代码...
+  obs-scripting.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\deps\obs-scripting\Debug\obs-scripting.dll

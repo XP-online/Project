@@ -1,0 +1,8 @@
+﻿  decklink-device-discovery.cpp
+  decklink-device-instance.cpp
+  decklink-device.cpp
+  decklink.cpp
+  plugin-main.cpp
+  正在生成代码...
+  audio-repack.c
+  win-decklink.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\plugins\decklink\win\Debug\win-decklink.dll

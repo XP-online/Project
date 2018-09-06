@@ -1,0 +1,52 @@
+﻿  Automatic MOC for target obs
+  platform-windows.cpp
+  update-window.cpp
+  win-update.cpp
+  obs-app.cpp
+  api-interface.cpp
+  window-basic-main.cpp
+d:\project\obs\obs-studio-21.1.2\ui\window-basic-main.cpp(965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\project\obs\obs-studio-21.1.2\ui\window-basic-main.cpp(2934): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  window-basic-stats.cpp
+  window-basic-filters.cpp
+  window-basic-settings.cpp
+  window-basic-interaction.cpp
+  window-basic-properties.cpp
+  window-basic-auto-config.cpp
+  window-basic-main-outputs.cpp
+  window-basic-source-select.cpp
+  window-basic-auto-config-test.cpp
+  window-basic-main-scene-collections.cpp
+  window-basic-main-transitions.cpp
+  window-basic-main-dropfiles.cpp
+  window-basic-main-profiles.cpp
+  window-license-agreement.cpp
+  正在生成代码...
+  正在编译...
+  window-basic-status-bar.cpp
+  window-basic-adv-audio.cpp
+  window-basic-transform.cpp
+  window-basic-preview.cpp
+  window-namedialog.cpp
+  window-log-reply.cpp
+  window-projector.cpp
+  window-remux.cpp
+  properties-view.cpp
+d:\project\obs\obs-studio-21.1.2\ui\properties-view.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  volume-control.cpp
+  adv-audio-control.cpp
+  visibility-item-widget.cpp
+  source-list-widget.cpp
+  qt-display.cpp
+  crash-report.cpp
+  hotkey-edit.cpp
+  source-label.cpp
+  remote-text.cpp
+  audio-encoders.cpp
+  qt-wrappers.cpp
+  正在生成代码...
+  正在编译...
+  mocs_compilation.cpp
+  正在生成代码...
+    正在创建库 D:/Project/OBS/obs-studio-21.1.2/build/UI/Debug/obs64.lib 和对象 D:/Project/OBS/obs-studio-21.1.2/build/UI/Debug/obs64.exp
+  obs.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\UI\Debug\obs64.exe

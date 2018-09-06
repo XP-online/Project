@@ -1,0 +1,30 @@
+﻿  wasapi-enum-devices.c
+  wasapi-output.c
+  obs-audio-controls.c
+  obs-audio.c
+  obs-avc.c
+  obs-display.c
+  obs-encoder.c
+  obs-hotkey-name-map.c
+  obs-hotkey.c
+  obs-module.c
+  obs-output-delay.c
+  obs-output.c
+  obs-properties.c
+  obs-scene.c
+  obs-service.c
+  obs-source-deinterlace.c
+  obs-source-transition.c
+  obs-source.c
+d:\project\obs\obs-studio-21.1.2\libobs\obs-source.c(1015): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\project\obs\obs-studio-21.1.2\libobs\obs-source.c(2002): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  obs-video.c
+d:\project\obs\obs-studio-21.1.2\libobs\obs-video.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  obs-view.c
+  正在生成代码...
+  正在编译...
+  obs-windows.c
+  obs.c
+d:\project\obs\obs-studio-21.1.2\libobs\obs.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  libobs.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\libobs\Debug\obs.dll

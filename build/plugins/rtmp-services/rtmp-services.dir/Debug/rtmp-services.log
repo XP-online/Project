@@ -1,0 +1,6 @@
+﻿  rtmp-common.c
+  rtmp-custom.c
+  rtmp-services-main.c
+  twitch.c
+  正在生成代码...
+  rtmp-services.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\plugins\rtmp-services\Debug\rtmp-services.dll

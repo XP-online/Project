@@ -1,0 +1,6 @@
+﻿  plugin-main.cpp
+  win-wasapi.cpp
+d:\project\obs\obs-studio-21.1.2\plugins\win-wasapi\win-wasapi.cpp(19): warning C4005: “KSAUDIO_SPEAKER_2POINT1”: 宏重定义
+  d:\windows kits\10\include\10.0.17134.0\shared\ksmedia.h(1727): note: 参见“KSAUDIO_SPEAKER_2POINT1”的前一个定义
+  正在生成代码...
+  win-wasapi.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-wasapi\Debug\win-wasapi.dll

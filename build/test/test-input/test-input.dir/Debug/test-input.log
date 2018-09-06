@@ -1,0 +1,10 @@
+﻿  sync-async-source.c
+  sync-audio-buffering.c
+  sync-pair-aud.c
+  sync-pair-vid.c
+  test-filter.c
+  test-input.c
+  test-random.c
+  test-sinewave.c
+  正在生成代码...
+  test-input.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\test\test-input\Debug\test-input.dll

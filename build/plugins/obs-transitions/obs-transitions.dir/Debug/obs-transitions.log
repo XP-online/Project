@@ -1,0 +1,10 @@
+﻿  obs-transitions.c
+  transition-cut.c
+  transition-fade-to-color.c
+  transition-fade.c
+  transition-luma-wipe.c
+  transition-slide.c
+  transition-stinger.c
+  transition-swipe.c
+  正在生成代码...
+  obs-transitions.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\plugins\obs-transitions\Debug\obs-transitions.dll

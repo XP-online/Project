@@ -1,0 +1,13 @@
+﻿  dump.c
+  error.c
+  hashtable.c
+  hashtable_seed.c
+  load.c
+  memory.c
+  pack_unpack.c
+  strbuffer.c
+  strconv.c
+  utf.c
+  value.c
+  正在生成代码...
+  jansson.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\deps\jansson\lib\Debug\jansson_d.lib

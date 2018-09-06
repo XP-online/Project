@@ -9,14 +9,6 @@
 /build/.vs/obs-studio/v15/Browse.VC.db
 /build/.vs/obs-studio/v15/.suo
 /build/x64/Debug
-/build/UI
-/build/test
-/build/rundir/Debug
-/build/plugins
-/build/libobs-opengl
-/build/libobs-d3d11
-/build/libobs
-/build/deps
 /build/.vs/obs-studio/v15/ipch/AutoPCH/12038e7b75ac68ee
 /build/.vs/obs-studio/v15/ipch/AutoPCH/e81a38172b26a54a/OBS-VIDEO.ipch
 /build/.vs/obs-studio/v15/ipch/AutoPCH/41242aff4fb9ee9e/OBS-VIEW.ipch
@@ -25,10 +17,3 @@
 /build/.vs/obs-studio/v15/ipch/AutoPCH/b3194cf2e2faf3e5/WINDOW-CAPTURE.ipch
 /build/.vs/obs-studio/v15/ipch/AutoPCH/e5d4a0c5969925fe/OBS-SOURCE.ipch
 .vs
-rundir
-x64
-/build/PACKAGE.vcxproj.user
-/build/ZERO_CHECK.vcxproj.user
-/build/INSTALL.vcxproj.user
-/build/ALL_BUILD.vcxproj.user
-ALL_BUILD.vcxproj.user

@@ -1,0 +1,6 @@
+﻿  get-graphics-offsets.c
+  dxgi-offsets.cpp
+  d3d8-offsets.cpp
+  d3d9-offsets.cpp
+  正在生成代码...
+  get-graphics-offsets.vcxproj -> D:\Project\OBS\obs-studio-21.1.2\build\plugins\win-capture\get-graphics-offsets\Debug\get-graphics-offsets64.exe
